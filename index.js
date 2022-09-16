@@ -8,16 +8,16 @@ app.all('/', (req, res) => {
     res.send('Bienvenue sur l\'API de CITYSPORT des Développeurs web')
 })
 
-app.listen(process.env.PORT || 3000)
+app.listen(process.env.PORT || 3001)
 
 app.use(express.json())
 app.use(cors())
 
 const con = mysql.createConnection({
-    host: 'sql630.main-hosting.eu',
-    user: 'u182055283_bolo',
-    password: '@Bolo1997',
-    database: 'u182055283_base'
+    host: 'localhost',
+    user: 'root',
+    password: '',
+    database: 'eshop'
 })
 
 
